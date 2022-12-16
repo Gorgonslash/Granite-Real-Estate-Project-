@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Granite Real Estate</title>
+    <link rel="icon" href="/Images/Screenshot_20221105-200952_Canvas Student.jpg" type="image/icon type">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/67a9501435.js" crossorigin="anonymous"></script>
+    <style>
+    #foot {
+        position: absolute;
+        right: 50px;
+      }
+      #block1 {
+        background-color: white;
+        border-right: 2px solid #198754;
+      }
+      #block2 {
+        background-color: white;
+      }
+      #block3 {
+        background-color: white;
+        border-left: 2px solid #198754;
+      }
+     #gallery { 
+    background-image: linear-gradient(to top left, #198754 50%, transparent 50%),
+    linear-gradient(to bottom right, #198754 50%, transparent 50%);
+    background-size: 60% 100%, 100% 50%;
+    background-repeat: no-repeat;
+    background-position: bottom right, top left;
+     }
+      .brand {
+        position: relative;
+        top: 10;
+        left: 0px;
+        height: 55px;
+        width: 80px;
+
+      }
+      .navbar {
+        border-bottom: 2px solid #198754;
+        height: 70px;
+       } 
+       
+      .title-style{
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-weight: 700;
+font-size: 20px;
+color: hsl(52, 0%, 98%);
+}
+.title-quote{
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-weight: 400;
+color: hsl(52, 0%, 98%);
+}
+li {
+  padding-right: 40px;
+}
+      .nav-link:hover {
+  border-bottom: 4px solid #198754;
+  padding: 6px 0; 
+}
+        .card { 
+        transition: all .2s ease-in-out; 
+        }
+
+        .card:hover { 
+        transform: scale(0.9); 
+        }
+        hr {
+            border-top: 8px solid #198754;
+        }
+        #card {
+          border: 2px solid #198754;
+          height: 650px;
+          transition: none;
+          transform: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="brand" src="/Images/Screenshot_20221105-200952_Canvas Student.jpg" alt="" width="50" height="40"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse bg-white" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-success" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-success" href="about.html">Who Is Granite</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-success" href="listings.html">Listings</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-success" href="services.html">Our Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-success" href="faqs.html">FAQS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-success" href="contact.html">Get In Touch</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-success" href="blog.html">Blog</a>
+              </li>
+              <a class="navbar-text text-decoration-none text-danger" href="tel:+8028243069">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" lc-helper="svg-icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"></path>
+                </svg> Call us now: 802-824-3069
+              </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <section class="pt-5 pb-5 mt-0 align-items-center d-flex bg-dark" style=" min-height: 100vh; background-size: cover; background-image: url(&quot;https://images.unsplash.com/photo-1591474200742-8e512e6f98f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80&quot;);">
+            <div class="container ">
+              <div class="row align-items-center d-flex justify-content-between">
+                <div class="col-12 col-md-6 pb-5 order-2 order-sm-2 ">
+                  <h1 class="  text-white font-weight-bold mb-3 mt-5 display-3 fw-bold">Find Your Forever Home</h1>
+                  <p class="lead fw-bold text-white">Granite Real Estate is at your service. Whether you want to buy, sell, rent, or just gather information we are your hub for everything real estate.</p>
+                  <div class=" d-flex mt-3 mb-1">
+                    <a class="btn btn-white text-success bg-white btn-raised text-uppercase btn-lg  mt-md-3 " href="contact.html" role="button">Contact Us Today!</a>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 order-sm-1 order-md-2  ">
+                  <div class="icon-wrap text-primary d-flex justify-content-md-center my-3">
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+   <section id="header" class="jumbotron text-center">
+     <h1 class="display-3">Featured Listings</h1>
+     <p class="lead">Take a look at some of our best properties for sale.</p>
+</section>
+  
+<section class="block" id="gallery">
+  <div class="container hover-zoom">
+    <div class="row">
+    <div class="col-lg-4 mb-4">
+      <a class="text-decoration-none" href="hillary.html">
+    <div class="card">
+      <img src="https://cdn.pixabay.com/photo/2016/11/18/17/46/house-1836070_960_720.jpg" alt="" class="card-img-top">
+      <div class="card-body bg-white">
+        <h5 class="card-title text-success">3246 Hillary Lane</h5>
+        <p class="card-text text-success">Medium sized home in rural setting with 3 bedrooms, 2 baths. 1 garage. 1 shed.</p>
+       </a>
+      </div>
+     </div>
+    </div>
+  <div class="col-lg-4 mb-4">
+    <a class="text-decoration-none" href="brick.html">
+  <div class="card">
+      <img src="https://cdn.pixabay.com/photo/2016/06/11/19/01/house-1450586_960_720.jpg" alt="" class="card-img-top">
+      <div class="card-body bg-white text-success">
+        <h5 class="card-title text-success">1017 Brick Drive</h5>
+        <p class="card-text text-success">Bright home with beautiful garden. 4 bedrooms, 2 baths. 1 winter room for plants.</p>
+      </a>
+      </div>
+      </div>
+    </div>
+    <div class="col-lg-4 mb-4">
+      <a class="text-decoration-none" href="robert.html">
+    <div class="card">
+      <img src="https://cdn.pixabay.com/photo/2016/09/19/17/16/beautiful-home-1680789_960_720.jpg" alt="" class="card-img-top">
+      <div class="card-body bg-white">
+        <h5 class="card-title text-success">4567 Robert Street</h5>
+        <p class="card-text text-success">Large remodeled home with 5 bedrooms, 2 baths. Huge garden.</p>
+       </a>
+      </div>
+     </div>
+    </div>
+  </div>
+  <div class="row">
+  <div class="col-lg-4 mb-4">
+    <a class="text-decoration-none" href="carly.html">
+  <div class="card">
+    <img src="https://cdn.pixabay.com/photo/2016/04/18/08/58/new-england-1336173_960_720.jpg" alt="" class="card-img-top" height="250px">
+    <div class="card-body bg-white">
+      <h5 class="card-title text-success"> 234 Carly Road</h5>
+      <p class="card-text text-success">Large family home with 6 bedrooms, 2 baths. Patio and garden.</p>
+     </a>
+    </div>
+   </div>
+  </div>
+<div class="col-lg-4 mb-4">
+  <a class="text-decoration-none" href="laura.html">
+<div class="card">
+    <img src="https://cdn.pixabay.com/photo/2018/03/21/21/17/gardening-3248249_960_720.jpg" alt="" class="card-img-top" height="250px">
+    <div class="card-body bg-white">
+      <h5 class="card-title text-success"> 1544 Laura Avenue</h5>
+      <p class="card-text text-success">Sophisticated home with 3 bedrooms, 2 baths. In a quiet neighborhood.</p>
+     </a>
+    </div>
+    </div>
+  </div>
+  <div class="col-lg-4 mb-4">
+    <a class="text-decoration-none" href="jesse.html">
+    <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2017/12/10/03/18/balcony-3009152_960_720.jpg" alt="" class="card-img-top" height="250px">
+        <div class="card-body bg-white">
+          <h5 class="card-title text-success">6778 Jesse Hill</h5>
+          <p class="card-text text-success">Huge modern home with 6 beds, 3 baths. Located in quiet cul-de-sac</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<div id="run" class="container">
+	<div class="row">
+		<div class="col-md-12 text-center">
+			<div class="lc-block">
+				<span editable="inline" class="small mt-4 d-block"></span>
+				<h2 editable="inline" class="display-2 mb-0 text-success"><b>What Granite Can Do For You</b></h2>
+				<p editable="inline"> Here at Granite we offer a wide range of services deisgned to help our customers navigate the industry.
+
+					<br> Below are a few of the services we offer.
+
+				</p>
+			</div>
+			<!-- /lc-block -->
+		</div>
+	</div>
+	<div class="row pt-4 pb-4 g-0">
+		<div id="block1" class="col-md-4 text-center">
+			<div class="lc-block p-4">
+				<div>
+					<h5 class="mb-4 mt-3 text-success" editable="inline">
+            <i class="fa-solid fa-dollar-sign"></i> <br> <br>
+						<strong>Buying or Selling</strong>
+					</h5>
+				</div>
+				<div editable="rich">
+					<p>Need assistance with purchasing or selling a house? We can help.&nbsp;</p>
+				</div>
+			</div>
+			<!-- /lc-block -->
+		</div>
+		<div id="block2" class="col-md-4 text-center">
+			<div class="lc-block p-4">
+				<div>
+					<h5 class="mb-4 mt-3 text-success" editable="inline">
+            <i class="fa-solid fa-house"></i> <br> <br>
+						<strong>Renting</strong>
+					</h5>
+				</div>
+				<div editable="rich">
+				<p>Renting is hard. Whether you're in search of a place to rent or in search of tenants we can provide you with excellent service.	&nbsp;</p>
+				</div>
+			</div>
+		</div>
+		<div id="block3" class="col-md-4 text-center">
+			<div class="lc-block p-4">
+				<div>
+					<h5 class="mb-4 mt-3 text-success" editable="inline">
+            <i class="fa-solid fa-question"></i> <br> <br>
+						<strong>Information</strong>
+					</h5>
+				</div>
+				<div editable="rich">
+					<p>Whether your're in need of a qoute or just curious. We're here to help&nbsp;</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div>
+  <hr class="rounded">
+  <h1 class="text-center text-success"> Want To Know Your Home's Worth?</h1>
+</div>
+<div class="container py-5">
+  <div class="row d-flex justify-content-center align-items-center">
+    <div class="col">
+      <div id="card" class="card my-4 shadow-3">
+        <div class="row g-0">
+          <div class="col-xl-6 d-xl-block bg-image">
+            <img src="https://images.unsplash.com/photo-1562663474-6cbb3eaa4d14?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="Sample photo"
+              class="img-fluid"/>
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
+              <div class=" justify-content-center align-items-center h-100">
+                <div class=" text-center" style="margin-top: 220px;">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6">
+            <div class="card-body p-md-5 text-black">
+              <h3 class="mb-4 text-uppercase text-success">Tell Us About Your Home</h3>
+
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <input type="text" id="form3Example1m" class="form-control form-control-lg" />
+                    <label class="form-label" for="form3Example1m">Street Address</label>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <input type="text" id="form3Example1n" class="form-control form-control-lg" />
+                    <label class="form-label" for="form3Example1n">City</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-outline mb-4">
+                <input type="text" id="form3Example8" class="form-control form-control-lg" />
+                <label class="form-label" for="form3Example8">Zip</label>
+              </div>
+
+
+
+              <div class="row">
+                <div class="col-md-6 mb-4">
+
+                  <select class="select">
+                    <option value="1">Bedrooms</option>
+                    <option value="2">1-3</option>
+                    <option value="3">3-5</option>
+                    <option value="4">5+</option>
+                  </select>
+
+                </div>
+                <div class="col-md-6 mb-4">
+
+                  <select class="select">
+                    <option value="1">Baths</option>
+                    <option value="2">1</option>
+                    <option value="3">2</option>
+                    <option value="4">3</option>
+                  </select>
+
+                </div>
+              </div>
+
+              <div class="form-outline mb-4">
+                <input type="text" id="form3Example3" class="form-control form-control-lg" />
+                <label class="form-label" for="form3Example3">Year Built</label>
+              </div>
+
+              <div class="form-outline mb-4">
+                <input type="text" id="form3Example2" class="form-control form-control-lg" />
+                <label class="form-label" for="form3Example2">Email</label>
+              </div>
+
+              <div class="d-flex justify-content-end pt-3">
+              <a href=""> <button type="button" class="btn btn-success btn-lg ms-2">
+                  Submit</button>
+              </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<hr class="rounded">
+    </main>
+    <footer class="bg-dark text-white">
+      <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5">
+            <div class="col mb-3">
+              <div class="lc-block mb-3"><a class="navbar-brand" href="https://library.livecanvas.com/sections/">
+                  <img class="img-fluid me-1" src="\Images\Screenshot_20221105-200952_Canvas Student.jpg" alt="my brand" width="75px" height="75px" lc-helper="image">
+                </a></div>
+              <div class="lc-block">
+                <div editable="rich">
+      
+                  <p class="text-muted">© 2022 Granite Real Estate</p>
+                </div>
+              </div>
+      
+            </div>
+            <div class="col offset-md-2 mb-3">
+              <div class="lc-block mb-4">
+                <div editable="rich">
+                  <h4 class="">Helpful Information</h4>
+                </div>
+              </div>
+              <!-- /lc-block -->
+              <div class="lc-block small"> <style>
+        .footer-links-list ul { padding-left:0 }
+        .footer-links-list ul li {margin-bottom:15px; list-style-type:none;padding-left:0 }
+        .footer-links-list a {text-decoration:none; color:var(--bs-body-color);}
+        
+      </style>
+                <div editable="rich" class="footer-links-list">
+      
+                  <ul>
+                    <ul>
+                      <li><a class="text-white" href="https://www.mls.com/"  target="_blank" rel="noopener noreferrer">MLS</a> </li>
+                      <li><a class="text-white" href="https://www.vsha.org/"  target="_blank" rel="noopener noreferrer">Vermont State Housing Authority</a></li>
+                      <li><a class="text-white" href="https://fha.gov/"  target="_blank" rel="noopener noreferrer">Federal Housing Administration</a></li>
+                      <li><a class="text-white" href="#"  target="_blank" rel="noopener noreferrer">Purchase and Sales Agreement</a></li>
+                      <li><a class="text-white" href="policy.html"  target="_blank" rel="noopener noreferrer">Security Policy</a> </li>
+                      <li><a class="text-white" href="https://www.freeprivacypolicy.com/live/4d329f0b-9183-431e-97ef-5db2460d8f4a" target="_blank" rel="noopener noreferrer">Privacy Policy</a> </li>
+                    </ul>
+                </div>
+              </div>
+              <!-- /lc-block -->
+            </div>
+            
+            <div id="foot" class="col mb-3">
+              <div class="lc-block mb-4">
+                <div editable="rich">
+                  <h4>Newsletter</h4> <br>
+                </div>
+              </div>
+              <!-- /lc-block -->
+              <div class="lc-block small">
+                <div editable="rich" class="footer-links-list">
+      
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Email Address" aria-label="">
+                    <button class="btn btn-success" type="button">Sign-up</button>
+                  </div>
+      
+                </div>
+              </div>
+              <!-- /lc-block -->
+            </div>
+          </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/abb6e16f19.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</body>
+</html>
